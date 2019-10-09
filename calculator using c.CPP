@@ -7,10 +7,10 @@ int arith()
  clrscr();
  printf("ARITHMATIC OPERATIONS MENU\n");
  printf("WHAT OPERATION DO YOU WANT TO PERFORM?\n");
- printf("FOR ADDITION PRESS 1\n");
- printf("FOR SUBTRACTION PRESS 2\n");
- printf("FOR MULTIPLICATION PRESS 3\n");
- printf("FOR DIVISION PRESS 4\n");
+ printf("FOR ADDITION PRESS ADD");
+ printf("FOR SUBTRACTION PRESS SUB\n");
+ printf("FOR MULTIPLICATION PRESS MUL\n");
+ printf("FOR DIVISION PRESS DIV\n");
  scanf("%d",&n);
  switch(n){
  case 1:
@@ -38,7 +38,7 @@ int arith()
 	  printf("Division result is %d\n",c);
 	  break;
  default:
-      printf("WRONG INPUT\n");
+      printf("WRONG INPUT WRITE CORRECT TO GO FORWARD\n");
       break;
  }
  return 0;
@@ -56,7 +56,7 @@ int fart(int n){
     for(i=1;i<=n;i++){
 	f=f*i;
     }
-    return f;
+    return i;
 }
 int krishna(int n){
  int s=0,p,c;
@@ -126,5 +126,5 @@ void main()
  printf("Do you want to calculate more??(Y/N) \n");
  scanf("%c",&x);
  }while(x=='Y'||x=='y');
- getch();
+ return 0;
 }
